@@ -1,28 +1,208 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ativdade 1</title>
+    <title>Tabelas</title>
 </head>
-
 <body>
-    <h1>Tabela 1</h1>
-    <font color="blue", align="center"> 
-    <table border="1" color="blue">
+    <h2>Tabela </h2>
+    <table border="2" style="columns: color#000;" >
         <tr>
+            <td rowspan="2" colspan="2"></td>
 
-            <td colspan="3", rowspan = "2"> </td>
-            <td colspan=5> Demografia</td>
+            <td colspan="4" style="text-align: center; background:yellow;" >Demografia </td>
+ 
+            <tr> 
+     
+                <td bgcolor="yellow">Homens</td>
+                <td bgcolor="yellow">Meninas</td>
+                <td bgcolor="yellow">Professor</td>   
+            </tr>
+
+            <tr>
+                <td bgcolor="yellow" rowspan="4">turmas</td> 
+                <th bgcolor="yellow">A</th>
+                <td bgcolor="yellow">20</td>
+                <td bgcolor="yellow">5</td>
+                <td bgcolor="yellow">Joao <br> Pedro</td>
+            </tr>
+
+            <tr>
+
+                <th bgcolor="yellow">B</th>
+                <td bgcolor="yellow">21</td>
+                <td bgcolor="yellow">3</td>
+                <td bgcolor="yellow">idem</td>
+            </tr>
+
+            <tr> 
+
+                <th bgcolor="yellow">D</th>
+                <td bgcolor="yellow">25</td>
+                <td bgcolor="yellow">2</td>
+                <td bgcolor="yellow">Maria <br> Joao</td> 
+            </tr>
+
+            <tr>
+         
+                <th bgcolor="yellow">D</th>
+                <td bgcolor="yellow">20</td>
+                <td bgcolor="yellow">0</td>
+                <td bgcolor="yellow">idem</td>
+            </tr>
+            <tr> 
+                <td bgcolor="yellow" colspan="2">Total</td>
+ 
+                <td bgcolor="yellow">86</td>
+                <td bgcolor="yellow">4</td>
+                <td bgcolor="yellow" >2</td>
+            </tr>
+
+        </table>
+
+
+        <br> <br> 
+
+        <table border="1">
+        <tr>
+            <td align="center" rowspan="3" colspan="3"> Day</td> 
+            <td align="center"  colspan="10" >Seminar</td>
+        </tr>
+
+        <tr>  
+            <td align="center"  colspan="2">Schedule</td>
+            <td align="center"  rowspan="2" colspan="" >Topic</td>
+        </tr>
+
+        <tr>
+            <td colspan="">Begin</td>
+            <td colspan="1">End</td>
+        </tr>
+
+        <tr>    
+            <td rowspan="2" colspan="3">Monday</td>
+            <td colspan="1" rowspan="2" bgcolor="lightyellow"> 8:00 p.m.</td>
+            <td colspan="1" rowspan="2" bgcolor="#C8A2C8">5:00 a.m</td>
+            <td>introduction to XML</td>
+        </tr>
+
+        <tr>
+            <td colspan="7">Validity; DTD and Relax NG 
+
+            </td>
 
         </tr>
 
+        <tr> 
+            <td rowspan="4" colspan="3">Tuesday</td>
+
+        </tr>
+
+        <tr>
+            <td bgcolor="lightyellow">8:00a.m.</td>
+            <td bgcolor="lightyellow">5:00p.m.</td>
+            <td rowspan="2" > Xpath</td>
+            
+        </tr>
+
+        <tr>
+            <td bgcolor="lightyellow">11:00a.m.</td>
+            <td bgcolor="lightgreen">2:00p.m.</td>
+        </tr>
+
+        <tr>
+            <td bgcolor="lightgreen">2:00p.m.</td>
+            <td bgcolor="#C8A2C8">5:00p.m.</td>
+            <td>XSL transformations</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">wednesday</td>
+            <td bgcolor="lightyellow">8:00a.m</td>
+            <td bgcolor="lightgreen">12:00p.m.</td>
+            <td> XSL Fornatting Objects</Object></td>
+        </tr>
+
+        </table>
 
 
-    </table>
-    </font>
+                    
 
+<br> <br> 
+
+<table border="1" >
+    <tr align="center"> 
+        <th rowspan="3" colspan="1" bgcolor="yellow">ㅤㅤㅤ</th>
+        <td>L1 C2</td>
+        <td>L1 C3</td>
+        <td>L1 C4</td>
+        <td>L1 C5</td>
+        <td>L1 C6</td>
+    </tr>
+
+    <tr align="center">
+        <td>L2 C2</td>
+        <td>L2 C3</td>
+        <td>L2 C4</td>
+        <td>L2 C5</td>
+        <td>L2 C6</td>
+    </tr>
+
+    <tr align="center">
+        <td>L3 C2</td>
+        <td>L3 C3</td>
+        <td>L3 C4</td>
+        <td>L3 C5</td>
+        <td>L3 C6</td>
+    </tr>
+
+    <tr align="center">
+        <td border="" colspan="10">ㅤ</td>
+    </tr>
+
+    <tr >
+        <td>L1 C1</td>
+        <td>L1 C2</td>
+        <td  bgcolor="yellow" rowspan="3"> L1 <br> L2  <br> L3 - C3 </td>
+        <td>L1 C1</td>
+        <td>L1 C1</td>
+        <td>L1 C1</td>
+    </tr>
+
+    <tr align="center"> 
+        <td>L2 C1</td>
+        <td>L2 C2</td>
+        <td>L2 C4</td>
+        <td>L2 C5</td>
+        <td>L2 C6</td>
+    </tr>
+    
+    <tr align="center"> 
+        <td>L3 C1</td>
+        <td>L3 C2</td>
+        <td>L3 C4</td>
+        <td>L3 C5</td>
+        <td>L3 C6</td>
+    </tr>
+    
+    <tr align="center"> 
+        <td>L4 C1</td>
+        <td>L4 C2</td>
+        <td>L4 C3</td>
+        <td bgcolor="53a4ec" colspan="3">L4 C4-C5-C6</td>
+    </tr>
+
+    <tr>
+        <td bgcolor="53a4ec" colspan="2">ㅤ</td>
+        <td>L5 C3</td>
+        <td>L5 C4</td>
+        <td>L5 C5</td>
+        <td>L5 C6</td>
+    </tr>
+
+</table>
+<br><br><br><br><br><br><br><br>
 </body>
 
 </html>
