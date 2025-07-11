@@ -3,11 +3,27 @@
 
 <head>
     <title>Formulario Cliente</title>
+    <script src="validacao.js"></script>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 
 <body>
+
+    <ul>
+
+        <li><a href="Menu.html">Inicio</a>
+        <li><a href="#">Novidade</a>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Cadastro</a>
+            <div class="dropdown-content">
+                <a href="Formulario_produto.html">Novo jogo</a>
+                <a href="Formulario_cliente.html">Novo cliente</a>
+                <a href="formulario_fornecedor.html">Novo fornecedor</a>
+            </div>
+        </li>
+    </ul>
     <center>
-        <img src="logo1.png" alt="Logo" height="100" width="100"/>
+        <img src="logo.png" alt="Logo" height="100" width="100" />
         <h1>Cadastro de Cliente</h1>
         <form method="post" action="/cgi-bin/post-query">
             <table align="center">
@@ -21,7 +37,7 @@
                 </tr>
                 <tr>
                     <td>CNPJ do cliente:</td>
-                    <td><input type="text" name="cnpj" size="20" maxlength="15"></td>
+                    <td><input type="text" name="cnpj" required onkeypress="mascaras(this, formatarCNPJ)"></td>
                 </tr>
                 <tr>
                     <td>E-mail do cliente:</td>
@@ -29,8 +45,8 @@
                 </tr>
                 <tr>
                     <td><label for="Gênero dos jogos">Gênero dos jogos</label></td>
-                    
-                        <td><select name="Acao" id="Genero">Ação
+
+                    <td><select name="Acao" id="Genero">Ação
                             <option value="Aventura">Aventura</option>Aventura
                             <option value="RPG">RPG</option>RPG
                             <option value="Simulação">Simulação</option>Simulação
@@ -47,12 +63,12 @@
 
 
                         </select></td>
-                </tr>                   
-                    <td>
+                </tr>
+                <td>
                     <br>
                     <input type="submit" value="Cadastrar Cliente">
                     <input type="reset" value="Limpar">
-                    </td>
+                </td>
             </table>
         </form>
     </center>
